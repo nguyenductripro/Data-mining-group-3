@@ -110,5 +110,6 @@ FILE_PATH = "C:\\Users\\dongq\\Desktop\\phanlop\\mobiles_dataset_2025_clustered_
 
 <img width="1270" height="369" alt="image" src="https://github.com/user-attachments/assets/50500a8c-e5a3-4415-b2e1-f3e283053e2a" />
 
-- Bước 6: 
+- Bước 6: Sau đó ta được 3 file model đã được train xong gồm: decision_tree_model.pkl, knn_model.pkl và random_forest_model.pkl
 
+<img width="433" height="482" alt="image" src="https://github.com/user-attachments/assets/7e304fa1-d52d-46fb-ab0f-b32c4f45c0fd" />
