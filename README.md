@@ -38,71 +38,73 @@ thành data = pd.read_csv('C:\\Users\\dongq\\Desktop\\Data-mining-group-3-main\\
 
 - Bước 6: Sau đó ta được 3 file model đã được train xong gồm: processor_pca.pkl, processor_vectorizer.pkl và top_companies.pkl
 ## 2. Chạy model K-means
-- Bước 1: Mở file chứa code và dataset lên:
+- Bước 1: Mở folder chứa toàn bộ dự án lên trong Visual Studio code (Folder Data-mining-group-3-main)
 
-<img width="840" height="599" alt="image" src="https://github.com/user-attachments/assets/1b4918dd-4945-4a73-a1fe-34ee9b3420ff" />
+<img width="1919" height="1035" alt="image" src="https://github.com/user-attachments/assets/0b0815d8-5217-402c-84d8-c2dd508b6390" />
 
-- Bước 2: Mở file K-means.ipynb bằng Visual studio code lên
+- Bước 2: Chọn mở rộng phần folder kmean và click vào để mở file K-means.ipynb
 
-<img width="838" height="589" alt="image" src="https://github.com/user-attachments/assets/3af8cbdd-1bbb-4a78-af7f-43add660d32b" />
+<img width="1916" height="1019" alt="image" src="https://github.com/user-attachments/assets/958a7a4d-9852-4d42-ba98-9d66daada428" />
 
 - Bước 3: Copy path của file mobiles_dataset_2025_processed (5).csv
 
-<img width="549" height="743" alt="image" src="https://github.com/user-attachments/assets/86625a53-46a1-4948-8ce7-71533265e6cd" />
+<img width="560" height="1009" alt="image" src="https://github.com/user-attachments/assets/5ca45d7e-c873-4f0c-89a8-ea36c757e523" />
 
-- Bước 4: Paste đường dẫn vừa copy xong vào dòng FILE_PATH đang từ FILE_PATH = "/kaggle/input/mobile-data-set/Mobiles-Dataset-2025-processed (1).csv"  thành 
-FILE_PATH = "C:\\Users\\dongq\\Desktop\\kmeans\\mobiles_dataset_2025_processed (5).csv" (tùy từng máy nên phần này không cố định)
+- Bước 4: Paste đường dẫn vừa copy xong vào dòng FILE_PATH đang từ FILE_PATH = "dataAfterPreprocess.csv"  thành 
+FILE_PATH = "D:\\GitHub\\Data-mining-group-3\\dataAfterPreprocess.csv"
+(tùy từng máy nên phần này không cố định)
 
-<img width="1597" height="734" alt="image" src="https://github.com/user-attachments/assets/a16b585b-50c0-490f-833f-12ee11836da8" />
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/0c1eb580-7a9c-4837-8b50-7e595b3ce027" />
 
-- Bước 5: Chọn "Run All" --> Python Environments --> Python 3.13.2 (trong quá trình này có bất cứ yêu cầu tải thư viện hay gì thì cứ làm theo yêu cầu nếu thiếu)
+- Bước 5: Chọn "Run All" --> Python Environments (optional) --> Python 3.13.2 (optional) (trong quá trình này có bất cứ yêu cầu tải thư viện hay gì thì cứ làm theo yêu cầu nếu thiếu)
 
-<img width="1609" height="381" alt="image" src="https://github.com/user-attachments/assets/17a16b37-119c-4be2-ad44-f00505bea07e" />
+<img width="1602" height="268" alt="image" src="https://github.com/user-attachments/assets/1c091d4f-bfa4-4a76-9a01-ec7a1eaaa7ea" />
 
-<img width="1601" height="352" alt="image" src="https://github.com/user-attachments/assets/d44f3df0-3fce-4652-9310-e0929e130e4f" />
+- Bước 6: Nhập k bằng 4 vào
 
-<img width="1615" height="378" alt="image" src="https://github.com/user-attachments/assets/2092c9b8-5154-40d4-91b3-041db03df20d" />
+<img width="1601" height="370" alt="image" src="https://github.com/user-attachments/assets/f20d3a72-b689-4cde-85ca-4a0bc1ed6091" />
 
-- Bước 6: Nhập b bằng 3 vào
+- Bước 7: Chọn scrollable element để biết được sẽ gán nhãn như thế nào, ở đây theo ảnh 2 cột Launched Price là sẽ nhập là Cận cao cấp, Trung cấp, Giá rẻ và Cao cấp Nhập lần lượt tên 3 nhãn vào: Cao, trung bình, thấp:
 
-<img width="1622" height="468" alt="image" src="https://github.com/user-attachments/assets/97471999-52ef-4781-b590-c19af5075638" />
+<img width="1588" height="1015" alt="image" src="https://github.com/user-attachments/assets/5b81d4d9-4323-43c3-b53a-8d8d20043756" />
 
-- Bước 7: Nhập lần lượt tên 3 nhãn vào: Cao, trung bình, thấp:
+<img width="1301" height="285" alt="image" src="https://github.com/user-attachments/assets/c5cc0cc7-804f-409d-a6ab-75b292821677" />
 
-<img width="1277" height="332" alt="image" src="https://github.com/user-attachments/assets/da323a20-5f7d-43f8-a72d-4d8ce3c56097" />
+<img width="1294" height="210" alt="image" src="https://github.com/user-attachments/assets/1b92129c-6288-4dd8-b9c0-651cbe824c20" />
 
-<img width="1276" height="377" alt="image" src="https://github.com/user-attachments/assets/fc9f2a5d-4a75-469e-b474-19750be3f775" />
+<img width="1309" height="467" alt="image" src="https://github.com/user-attachments/assets/7fa3c30d-3d73-45dc-b738-f0fb8dc3ca2c" />
 
-<img width="1276" height="457" alt="image" src="https://github.com/user-attachments/assets/9f7c4c68-3e8e-4537-af28-7fe62a279ea6" />
+<img width="1315" height="436" alt="image" src="https://github.com/user-attachments/assets/e3348e3b-f6df-4a0a-b7fc-f1ff4024c3a0" />
 
-- Bước 8: Kết quả: ta thu được bảng kết quả như hình 1 và 2 và các file như trong hình 3: kmeans_model.pkl và preprocessor.pkl
+<img width="1312" height="438" alt="image" src="https://github.com/user-attachments/assets/6934b7c8-e2bf-4995-8d4a-a737a041f491" />
 
-<img width="1262" height="749" alt="image" src="https://github.com/user-attachments/assets/17d926a8-a9f4-4bfd-95d6-3eacf8cda91c" />
+- Bước 8: Kết quả: ta thu được bảng kết quả như hình 1 và file csv như trong hình 2: kmeans_model.pkl, preprocessor.pkl và file data_with_clusters_and_labels.csv
 
-<img width="1215" height="583" alt="image" src="https://github.com/user-attachments/assets/ad1bfdcc-8509-4537-8725-830cb7baeee3" />
+<img width="322" height="556" alt="image" src="https://github.com/user-attachments/assets/33e19ad1-02bd-415b-a0d0-a9ca274e824e" />
 
-<img width="312" height="405" alt="image" src="https://github.com/user-attachments/assets/75ab673c-289f-4119-bf2b-b836137ea060" />
+<img width="1914" height="982" alt="image" src="https://github.com/user-attachments/assets/a00e7697-5a91-49bf-acbc-30e7ad45010e" />
 
 ## 3. Chạy model thuật toán phân lớp
 
-- Bước 1: Mở file chứa code và dataset lên:
+- Bước 1: Mở folder chứa toàn bộ dự án lên trong Visual Studio code (Folder Data-mining-group-3-main)
 
-<img width="897" height="472" alt="image" src="https://github.com/user-attachments/assets/cf58866e-0937-4974-83ca-c373fff30791" />
+<img width="1919" height="1017" alt="image" src="https://github.com/user-attachments/assets/c48b830f-d564-49b5-9fd0-98f3bdd68c16" />
 
-- Bước 2: Mở file modeling_knn_dt_rf_nn.ipynb bằng Visual Studio Code
+- Bước 2: Chọn mở rộng phần folder phanlop và click vào để mở file modeling_knn_dt_rf_nn.ipynb
 
-<img width="803" height="671" alt="image" src="https://github.com/user-attachments/assets/ce0b1c14-8c68-4ee6-a5f5-6ca8a96ddea9" />
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/138f55d0-89d1-45c6-a140-53cd1fc760b5" />
 
-- Bước 3: Copy path của file mobiles_dataset_2025_clustered_labeled.csv
+- Bước 3: Copy path của file dataAfterPreprocess.csv
 
-<img width="737" height="791" alt="image" src="https://github.com/user-attachments/assets/68906efb-e100-4a0b-8a80-2a3a1e7b157f" />
+<img width="594" height="1018" alt="image" src="https://github.com/user-attachments/assets/a993df19-644e-4de6-aac3-f1546ed86234" />
 
-- Bước 4: Paste đường dẫn vừa copy xong vào dòng FILE_PATH đang từ FILE_PATH = "/media/hoang/HDD_Code/Tài liệu học tập/Kỳ 1 năm 4/Khai phá dữ liệu/mobiles_dataset_2025_clustered_labeled.csv" thành 
-FILE_PATH = "C:\\Users\\dongq\\Desktop\\phanlop\\mobiles_dataset_2025_clustered_labeled.csv" (tùy từng máy nên phần này không cố định)
+- Bước 4: Paste đường dẫn vừa copy xong vào dòng FILE_PATH = 'dataAfterPreprocess.csv' thành 
+FILE_PATH = 'D:\\GitHub\\Data-mining-group-3\\dataAfterPreprocess.csv' (tùy từng máy nên phần này không cố định)
 
-<img width="1601" height="962" alt="image" src="https://github.com/user-attachments/assets/917bb270-41e4-4968-bfbf-0b46622b2614" />
+<img width="1913" height="976" alt="image" src="https://github.com/user-attachments/assets/2fcfafe3-35d8-44c9-85e9-7443fb71cd54" />
 
-- Bước 5: Chọn "Run All" --> Python Environments --> Python 3.13.2 (trong quá trình này có bất cứ yêu cầu tải thư viện hay gì thì cứ làm theo yêu cầu nếu thiếu)
+
+- Bước 5: Chọn "Run All" --> Python Environments (optional) --> Python 3.13.2 (trong quá trình này có bất cứ yêu cầu tải thư viện hay gì thì cứ làm theo yêu cầu nếu thiếu)
 
 <img width="1275" height="461" alt="image" src="https://github.com/user-attachments/assets/68205852-6902-4f1b-8476-f0f2ee0284f3" />
 
