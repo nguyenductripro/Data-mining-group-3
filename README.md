@@ -1,4 +1,3 @@
-</p>
 <h1 align="center"> 📱 Khai phá dữ liệu bằng phương pháp phân cụm và phân lớp để dự báo giá điện thoại </h1>
 <h3 align="center"> Nhóm 3 </h5>
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/852b1c87-1b29-4126-98ad-2311f08586ce" />
@@ -12,29 +11,30 @@
 - Môi trường: Trong case này là chạy trên windows 11
 ## 1. Chạy model preprocessing
 
-- Bước 1: Mở file chứa code và dataset lên:
+- Bước 1: Mở folder chứa toàn bộ dự án lên trong Visual Studio code (Folder Data-mining-group-3-main)
 
-<img width="871" height="458" alt="image" src="https://github.com/user-attachments/assets/8c9892df-95b3-41fa-9d78-e5d9b566b43e" />
+<img width="1919" height="1035" alt="image" src="https://github.com/user-attachments/assets/0b0815d8-5217-402c-84d8-c2dd508b6390" />
 
-- Bước 2: Mở file Preprocessor.ipynb bằng Visual Studio Code
+- Bước 2: Chọn mở rộng phần folder preprocessing và click vào để mở file preprocessing.ipynb
 
-<img width="832" height="608" alt="image" src="https://github.com/user-attachments/assets/1f7b7fc9-485b-4410-bc5c-80d306716fc9" />
+<img width="1918" height="1036" alt="image" src="https://github.com/user-attachments/assets/ccd27137-23e4-430b-95f0-2a82f2af7530" />
 
-- Bước 3: Copy path của file mobiles_dataset_2025.csv
+- Bước 3: Copy path của file rootdata.csv
 
-<img width="764" height="761" alt="image" src="https://github.com/user-attachments/assets/e4de42bb-7652-41da-b1cc-fa05e6ef589a" />
+<img width="424" height="1008" alt="image" src="https://github.com/user-attachments/assets/55228cf3-fb52-49bb-a15e-4a62f2ae06cd" />
 
-- Bước 4: Paste đường dẫn vừa copy vào vào [24] ở Step 2: Data Collection
+- Bước 4: Paste đường dẫn vừa copy vào vào [28] ở Step 2: Data Collection. Đổi dòng data = pd.read_csv('Mobiles-Dataset-2025.csv', encoding='latin1')
+thành data = pd.read_csv('C:\\Users\\dongq\\Desktop\\Data-mining-group-3-main\\rootdata.csv', encoding='latin1') (lưu ý đường dẫn này mỗi máy khác nhau)
 
-<img width="1615" height="742" alt="image" src="https://github.com/user-attachments/assets/71d4a828-d2dc-474f-b56a-ddb9f9a5d9a4" />
+<img width="1569" height="994" alt="image" src="https://github.com/user-attachments/assets/8344b3f1-b3f0-4063-87c3-280718b85438" />
 
 - Bước 5: Chọn "Run All" --> Python Environments --> Python 3.13.2 (trong quá trình này có bất cứ yêu cầu tải thư viện hay gì thì cứ làm theo yêu cầu nếu thiếu)
 
-<img width="1614" height="387" alt="image" src="https://github.com/user-attachments/assets/eb615b35-df50-4e8c-aeed-556a3942d249" />
+<img width="1009" height="157" alt="image" src="https://github.com/user-attachments/assets/d11a3c52-e701-4bcc-b222-6d5b8c871607" />
 
-<img width="1591" height="303" alt="image" src="https://github.com/user-attachments/assets/777bfcc7-c069-4dec-a013-3e3c6856ccf0" />
+<img width="1577" height="232" alt="image" src="https://github.com/user-attachments/assets/20d8026e-8eb8-4008-898c-3b0906d11092" />
 
-<img width="1616" height="304" alt="image" src="https://github.com/user-attachments/assets/0bef2b6f-196c-44f7-818b-04962986e0d7" />
+<img width="1567" height="400" alt="image" src="https://github.com/user-attachments/assets/b9a8df23-a408-40c6-8bdf-b4e9251eab4b" />
 
 - Bước 6: Sau đó ta được 3 file model đã được train xong gồm: processor_pca.pkl, processor_vectorizer.pkl và top_companies.pkl
 ## 2. Chạy model K-means
